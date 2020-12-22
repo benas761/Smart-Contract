@@ -1,1 +1,21 @@
 # Smart-Contract
+
+- Buvo sukurta išmaniosios sutarties veikimo logika, paremta nurodytu straipsniu:
+  - Pardevėjas prideda pirkėją ir jo norimą kainą.
+  - Pirkėjas už tą prekę užmoka ir siuntai priskiria kurjerį.
+  - Kurjeris pristato prekę.
+  - Pardavėjui užmokama nustatyta suma, kurjeriui atskaičiujami papildomi 10% nuo kainos ir pirkėjui grąžinama grąža.
+- Ši logika buvo įvykdyta ir yra matoma išmaniojoje sutartyje trade.sol.
+- Ši sutartis buvo ištestuota naudojant lokalų Ganache tinklą bei per Goerli Test Network, prie kurios buvo prisijungta per Metamask.
+- Surinkti išmaniosios sutarties logai yra matomi logs kataloge.
+- Front-End'ui įgyvendyti buvo panaudota web3 biblioteka, įgalinanti prisijungimą prie testinės aplinkos per Metamask. Paleidimo instrukcija:
+  - Susikurti naują katalogą, kuriame bus laikomi aplikacijos failai.
+  - Parsisiųsti node.js ir npm paketus.
+  - Su npm parsisiųsti express ir web3 bibliotekas.
+  - Startuoti lokalų serverį su node server.js.
+  - Pasileisti aplikaciją per http://localhost:8080/.
+  - Sukonfiguruoti sąsają su išmaniają sutartimi:
+    - Per remix.ethereum.org pasileisti išmaniają sutartį.
+    - Nukopijuoti jos adresą.
+    - Šį adresą įdėti vietoje `contractAddress` kintamojo reikšmės.
+  - Melstis kad niekur nieko nesumalei ir viskas gerai pasileido.
