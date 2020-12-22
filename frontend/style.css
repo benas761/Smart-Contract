@@ -1,0 +1,53 @@
+body { margin: 0; background-color: #aaaaaa; }
+.gridContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.container {
+	margin-bottom: 20px;
+}
+.input {
+	display: block;
+}
+button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 15px;
+	border: none;
+	border-radius: 5px;
+}
+.input {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+}
+.header {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5rem;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.headerText {
+	color: white;
+	font-family: serif;
+	margin: 0;
+}
+.containerDiv {
+}
+.gridHeader {
+	font-family: sans-serif;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+.ownerDiv  { background-color: #5982b5; padding-bottom: 20px; }
+.buyerDiv  { background-color: #a34e4e; padding-bottom: 20px; }
+.courierDiv{ background-color: #8da34e; padding-bottom: 20px; }
+@media all and (max-width: 650px) {
+	.gridContainer { display: block; }
+}

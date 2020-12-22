@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Decentralised application</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+
+  <body class="container">
+	<div class="header">
+		<br>
+		<h1 class="headerText">A Stock Decentralised Application</h1>
+	</div>
+	<div class="gridContainer">
+		<div class="ownerDiv containerDiv">
+			<h2 class="gridHeader">Owner</h2>
+				<div class="container">
+					<input id="buyerInput" class="input" placeholder="Buyer's address">
+					<input id="priceInput" class="input" placeholder="Item's price">
+					<button onclick="onRegister()">Register (1)</button>
+				</div>
+				<div id = "container">
+					<input id="courierInput" class="input" placeholder="Courier's address">
+					<button onclick="send()">Send (3)</button>
+				</div>
+		</div>
+		<div class="buyerDiv containerDiv">
+			<h2 class="gridHeader">Buyer</h2>
+			<button class="buyerButton" onclick="pay()">Pay (2)</button><br>
+			<button class="buyerButton" onclick="payOut()">Pay out (5)</button>
+		</div>
+		<div class="courierDiv containerDiv">
+			<h2 class="gridHeader">Courier</h2>
+			<button class="courierButton"onclick="deliver()">Deliver (4)</button>
+		</div>
+	</>
+  </body>
+</html>
