@@ -22,6 +22,7 @@ button {
 	margin-bottom: 5px;
 	padding: 5px;
 	border-radius: 5px;
+	width: 320px;
 }
 .header {
 	margin: 0;
@@ -45,4 +46,7 @@ button {
 .courierDiv{ padding-bottom: 20px; }
 @media all and (max-width: 650px) {
 	.gridContainer { display: block; }
+}
+@media all and (max-width: 320px) {
+	.input { width: auto; }
 }

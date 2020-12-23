@@ -46,7 +46,7 @@ accountChange();
 
 
 // contractAddress and abi are set after contract deploy
-var contractAddress = '0xb969cc31ed381B4914992c046C56374A5A10569d';
+var contractAddress = window.prompt("Paste the contract's address:", '0x325B3A31C2f86C92f3f692B0Ab9320b47F23Ec86');
 
 var abi = JSON.parse(`[
 	{
@@ -218,11 +218,11 @@ function registerGetInfo() {
 		document.getElementById('lastInfo').innerHTML = info;
 	});
 }*/
-var price = 2;
+var price;
 
 function register() {
 	const buyer = document.getElementById('buyerInput').value;
-	const price = document.getElementById('priceInput').value;
+	price = document.getElementById('priceInput').value * 1000000000000000000;
 	updateContract();
 	contract.methods.register(buyer, price).send({from:account}).then(function(address) {
 		console.log("Sender: ", account);
@@ -253,14 +253,3 @@ function deliver() {
 	updateContract();
 	contract.methods.deliver().send({from: account});
 }
-
-/*
-
-document
-	.getElementById("buyerForm")
-	.addEventListener('register', onRegister);
-
-document
-	.getElementById('courierForm')
-	.addEventListener('send', onSend);
-*/
